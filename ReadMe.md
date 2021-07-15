@@ -1,9 +1,3 @@
-# react-ts
+# drag-code
 
-> react + ts + less + webpack.
-
-```bash
-yarn
-yarn dev
-yarn build
-```
+> 先占坑
