@@ -4,7 +4,7 @@ import './app.less'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { DragItem, Container } from './components'
+import { Container, DragItem } from './components'
 
 export const App = () => {
   const components = [
@@ -26,10 +26,14 @@ export const App = () => {
       ),
     },
   ]
+
+  const getAst = () => {}
+
   return (
     <div className="app debug flex flex-direction-column">
       <header className="header flex align-items-center">
         菜单栏(尝试点击左侧组件拖到中间容器~)
+        <span className="tip">完整程序还在编写中~</span>
       </header>
       <main className="container flex flex-grow">
         <div className="container-left">
@@ -58,7 +62,10 @@ export const App = () => {
           </div>
         </div>
         <div className="container-right">
-          <div className="info">属性编辑器</div>
+          <div className="info">
+            属性编辑器
+            {/* <button onClick={() => console.log(getAst())}>get ast</button> */}
+          </div>
         </div>
       </main>
     </div>

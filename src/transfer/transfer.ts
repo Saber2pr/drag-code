@@ -15,7 +15,6 @@ export const Transfer = {
   },
   getData(event: React.DragEvent<any>) {
     const result = SafeJSON.parse(event.dataTransfer.getData('text/plain')) as TransferData
-    console.log('drop', result)
     return result
   }
 }

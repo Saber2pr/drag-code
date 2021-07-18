@@ -22,7 +22,7 @@ export const Container = (props: ContainerProps) => {
   const { draggable = true, width, height, scale, flexDirection } = props
   const [receive, setReceive] = useState(false)
   const [list, setList] = useState<TransferData[]>([])
-  console.log(list)
+
   return React.createElement('div', {
     draggable,
     style: {
@@ -52,7 +52,6 @@ export const Container = (props: ContainerProps) => {
       setReceive(false)
     },
     onDrop: event => {
-      console.log(event.target)
       setList(list.concat(Transfer.getData(event)))
       setReceive(false)
       event.stopPropagation()
