@@ -20,8 +20,10 @@
     "tpl"
   ],
   "dependencies": {
+    "@types/classnames": "^2.3.1",
     "@types/react": "^16.8.19",
     "@types/react-dom": "^16.8.4",
+    "classnames": "^2.3.1",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
